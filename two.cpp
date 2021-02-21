@@ -3,8 +3,8 @@ using namespace std;
 
 int main()
 {
-    string s="bbaeia";
-    int k=4;
+    string s="aeiouia";
+    int k=3;
 
     int count =0,maxi=0;
     string str="";
@@ -27,11 +27,11 @@ int main()
         count--;
         if(s[high]=='a'||s[high]=='e'||s[high]=='o'||s[high]=='u'||s[high]=='i')
         count++;
-
         if(count>maxi)
         {
             maxi=count;
-            str=s.substr(i+1,high);
+            str="";
+            str=s.substr(i+1,k);
         }
         high++;
         
